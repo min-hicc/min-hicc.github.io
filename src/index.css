@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    font-family: 'Courier Prime', monospace;
+    letter-spacing: 0.02em;
+    line-height: 1.7;
+}
+
+.flipped {
+    transform: scaleX(-1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fbfaf4;
+
+    position: fixed;
+    width: 100%;
+
+    padding: 20px 40px 20px 40px;
+    box-sizing: border-box;
+
+    z-index: 99;
+}
+.header-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero-container {
+    position: relative;
+    padding-top: 15vh;
+    background-color: #fbfaf4;
+    width: 100vw;
+    aspect-ratio: 16/9;
+}
+
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: absolute;
+
+    width: 40%;
+    left: 10%;
+
+    font-size: clamp(12px, 1.2vw, 24px);
+    /* border: 1px solid black; */
+}
+
+.red-text{
+    color: rgb(103, 28, 28);
+}
+
+.lake{
+    position: absolute;
+    width: 70%;
+    bottom: 17%;
+    left: 5%;
+}
+.me{
+    position: absolute;
+    width: 30%;
+    bottom: 30%;
+    left: 35%;
+}
+
+  
+.bait-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 25%;
+    left: 70%;
+    z-index: 81;
+}
+
+.bait-section{
+    display: flex;
+    flex-direction: row;
+}
+.blob-container{
+    position: relative;
+    width: 60%;
+}
+
+.blob{
+    width: 100%;
+    display: block;
+
+}
+
+.blob-text{
+    position: absolute;
+
+    top: 40%;
+    left: 55%;
+
+    transform: translate(-50%, -50%);
+
+    margin: 0;
+
+    text-align: left;
+
+    font-size: clamp(10px, 0.9vw, 20px);
+
+    width: 70%;
+}
+
+.bait{
+    width: 40%;
+    height: auto;
+    display: block;
+    pointer-events: none;
+}
+
+.bait path,
+.bait circle,
+.bait rect,
+.bait polygon,
+.bait ellipse {
+    pointer-events: visiblePainted;
+}
+
+
+.popup-background{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 98;
+    
+}
+.popup-img{
+    position: absolute;
+    z-index:99;
+    pointer-events: none;
+    animation: popupIn 0.25s ease-out forwards;
+    width: 40vw;
+    height: auto;
+}
+  
+.popup-img path,
+.popup-img polygon,
+.popup-img circle,
+.popup-img rect,
+.bait path,
+.bait polygon,
+.bait circle,
+.bait rect {
+    pointer-events: auto;
+}
+.popup{
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    animation: popupIn 0.25s ease-out forwards;
+    min-width: 300px;
+    z-index: 100;
+}
+
+@keyframes popupIn {
+    from {
+      transform: translateY(60px);
+    }
+    to {
+      transform: translateY(0);
+    }
+}
