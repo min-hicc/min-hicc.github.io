@@ -1,0 +1,140 @@
+.popup-background{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 98;
+    
+}
+.popup-img{
+    position: absolute;
+    animation: popupIn 0.25s ease-out forwards;
+    height: 90%;
+    top: 65px;
+    z-index:99;
+
+}
+
+.oct-img{
+    translate: -65px 0;
+}
+
+.crab-popup{
+    display: flex;
+    flex-direction: column;
+}
+
+  
+.bait path,
+.bait polygon,
+.bait circle,
+.bait rect {
+    pointer-events: auto;
+}
+
+.x-button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(213, 160, 160);
+    color: rgb(213, 160, 160);
+    background-color: white;
+    border-radius: 5px;
+}
+
+.x-button:hover{
+    border: 2px solid rgb(185, 138, 138);
+    color: rgb(185, 138, 138);
+    background-color: rgb(227, 227, 227);
+}
+
+.rabbit-text{
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    animation: popupIn 0.25s ease-out forwards;
+    max-width: 400px;
+    z-index: 100;
+    translate: 170px 0;
+}
+.trout-text{
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    animation: popupIn 0.25s ease-out forwards;
+    max-width: 300px;
+    z-index: 100;
+    translate: -120px 0;
+}
+.crab-text{
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    animation: popupIn 0.25s ease-out forwards;
+    max-width: 600px;
+    z-index: 100;
+    translate: 0 200px;
+}
+.oct-text{
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    animation: popupIn 0.25s ease-out forwards;
+    z-index: 100;
+    translate: 0 100px;
+    width: fit-content;
+    
+}
+
+@keyframes popupIn {
+    from {
+      transform: translateY(60px);
+    }
+    to {
+      transform: translateY(0);
+    }
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    border: 2px solid rgb(213, 160, 160);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color: rgb(185, 138, 138);
+}
+
+.submit-btn{
+    background: rgb(213, 160, 160);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.submit-btn:hover{
+    background: rgb(185, 138, 138);
+}
+
