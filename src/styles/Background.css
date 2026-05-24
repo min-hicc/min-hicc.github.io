@@ -1,0 +1,51 @@
+
+.background{
+    background-image: url('../assets/background.png');
+    background-size: cover;   
+    background-position: top center;  
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.plants-layer {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+
+    pointer-events: none;
+    z-index: 20;
+}
+
+.plant1,
+.plant2,
+.plant3,
+.plant4,
+.plant5 {
+    position: absolute;
+    width: 200px;
+}
+
+.plant1 {
+    top: 60px;
+    left: 0;
+}
+
+.plant2 {
+    bottom: -30px;
+}
+
+.plant3 {
+    right: 0;
+    bottom: -30px;
+}
+
+.plant4 {
+    top: 60%;
+    left: 0;
+}
+
+.plant5 {
+    top: 70px;
+    right: 0;
+}

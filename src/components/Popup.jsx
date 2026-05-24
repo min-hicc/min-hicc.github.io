@@ -3,11 +3,11 @@ import { IoMusicalNotes } from "react-icons/io5";
 import { IoCodeSlash } from "react-icons/io5";
 import { FaPeopleGroup } from "react-icons/fa6";
 
-import "./Popup.css";
-import octopus from "./assets/loot/oct.png"
-import trout from "./assets/loot/trout.png"
-import rabbit from "./assets/loot/rab.png"
-import crab from "./assets/loot/crab.png"
+import "../styles/Popup.css";
+import octopus from "../assets/loot/oct.png"
+import trout from "../assets/loot/trout.png"
+import rabbit from "../assets/loot/rab.png"
+import crab from "../assets/loot/crab.png"
 
 
 function RabbitPopup({ onClose }){

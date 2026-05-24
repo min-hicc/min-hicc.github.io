@@ -34,6 +34,8 @@ export const idleFrames = [
     idle2,
     idle3,
     idle3,
+    idle2,
+    idle2,
 
 ];
 

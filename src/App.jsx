@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react'
 import { idleFrames, grabFramesCarrot, grabFramesShrimp, grabFramesWorm, grabFramesLure, lakeFrames } from "./animations/me_animations";
+import "./styles/Hero.css";
 
-import Hero from "./Hero";
-import Popup from "./Popup";
+import Hero from "./components/Hero";
+import Popup from "./components/Popup";
+import Background from "./components/Background";
+
 
 
 function Header(){
@@ -91,6 +94,8 @@ function App(){
                     lakeImage={lakeFrames[lakeFrameIndex]}
                     meImage={animationFrames[frameIndex]}
                 />
+                <Background/>
+
             </div>
         </div>
     )

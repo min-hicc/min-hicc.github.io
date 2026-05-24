@@ -1,14 +1,14 @@
-import "./Hero.css";
+import "../styles/Hero.css";
 
-import blue from "./assets/blobs/blue.png"
-import green from "./assets/blobs/green.png"
-import yellow from "./assets/blobs/yellow.png"
-import red from "./assets/blobs/red.png"
+import blue from "../assets/blobs/blue.png"
+import green from "../assets/blobs/green.png"
+import yellow from "../assets/blobs/yellow.png"
+import red from "../assets/blobs/red.png"
 
-import Carrot from "./assets/bait/carrot.svg?react";
-import Lure from "./assets/bait/lure.svg?react";
-import Shrimp from "./assets/bait/shrimp.svg?react";
-import Worm from "./assets/bait/worm.svg?react";
+import Carrot from "../assets/bait/carrot.svg?react";
+import Lure from "../assets/bait/lure.svg?react";
+import Shrimp from "../assets/bait/shrimp.svg?react";
+import Worm from "../assets/bait/worm.svg?react";
 
 function Hero({ onBaitClick, lakeImage, meImage }){
     return(
