@@ -62,9 +62,9 @@
     padding: 2rem;
     border-radius: 12px;
     animation: popupIn 0.25s ease-out forwards;
-    max-width: 400px;
+    max-width: 450px;
     z-index: 100;
-    translate: 170px 0;
+    translate: 190px 0;
 }
 .trout-text{
     background: white;

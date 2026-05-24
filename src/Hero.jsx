@@ -10,7 +10,6 @@ import Lure from "./assets/bait/lure.svg?react";
 import Shrimp from "./assets/bait/shrimp.svg?react";
 import Worm from "./assets/bait/worm.svg?react";
 
-
 function Hero({ onBaitClick, lakeImage, meImage }){
     return(
         <div className="hero-container"> 
@@ -22,9 +21,9 @@ function Hero({ onBaitClick, lakeImage, meImage }){
             <img className="me" src={meImage} alt="me"/>
             <div className = "bait-container">
                 <div className="bait-section">
-                    <Carrot className="bait flipped" onClick={() => onBaitClick("carrot")}/>
+                    <Carrot className="bait" onClick={() => onBaitClick("carrot")}/>
                     <div className="blob-container">
-                        <img className="blob" src={green} alt="green"/>
+                        <img className="blob" src={green} alt="green" />
 
                         <div className="blob-text">
                             <h4>about me</h4>

@@ -17,9 +17,9 @@ function RabbitPopup({ onClose }){
             <div className="rabbit-text" onClick={(e) => e.stopPropagation()}>
                 <button className="x-button" onClick={onClose}>x</button>
                 <h1>About Me</h1>
-                <p>hi i am sharon ! outside of coding i love music & art. In my free time, you'll find me playing guitar, drawing, cooking, or reading.</p>
+                <p>hi i am sharon ! outside of coding i love music & art and have a million hobbies. In my free time, you'll find me playing guitar, drawing, reading, cooking, or traveling.</p>
                 <p>~</p>
-                <p><FaBook /> Current read: Crime and Punishment</p>
+                <p><FaBook /> Current readings: Crime and Punishment</p>
                 <p><IoMusicalNotes /> Current listenings: Steely Dan </p>
                 
             </div>

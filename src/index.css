@@ -4,11 +4,6 @@
     letter-spacing: 0.02em;
     line-height: 1.7;
 }
-
-.flipped {
-    transform: scaleX(-1);
-}
-
 .header {
     display: flex;
     align-items: center;

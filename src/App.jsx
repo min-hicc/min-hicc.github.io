@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { idleFrames, grabFrames, lakeFrames } from "./animations/me_animations";
+import { idleFrames, grabFramesCarrot, grabFramesShrimp, grabFramesWorm, grabFramesLure, lakeFrames } from "./animations/me_animations";
 
 import Hero from "./Hero";
 import Popup from "./Popup";
@@ -27,7 +27,18 @@ function App(){
     const [pendingPopup, setPendingPopup] = useState(null);
 
     const handleBaitClick = (value) => {
-        setAnimationFrames(grabFrames);
+        if (value == "carrot"){
+            setAnimationFrames(grabFramesCarrot);
+        }
+        else if (value == "lure"){
+            setAnimationFrames(grabFramesLure);
+        }
+        else if (value == "shrimp"){
+            setAnimationFrames(grabFramesShrimp);
+        }
+        else if (value == "worm"){
+            setAnimationFrames(grabFramesWorm);
+        }
         setFrameIndex(0);
         setIsLooping(false);
         setPendingPopup(value);
@@ -58,7 +69,7 @@ function App(){
                 }
                 return next;
             });
-        }, 120);
+        }, 100);
         return () => clearInterval(interval);
     }, [animationFrames, isLooping, pendingPopup]);
 
