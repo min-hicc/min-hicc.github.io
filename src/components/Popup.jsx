@@ -4,10 +4,10 @@ import { IoCodeSlash } from "react-icons/io5";
 import { FaPeopleGroup } from "react-icons/fa6";
 
 import "../styles/Popup.css";
-import octopus from "../assets/loot/oct.png"
-import trout from "../assets/loot/trout.png"
-import rabbit from "../assets/loot/rab.png"
-import crab from "../assets/loot/crab.png"
+import octopus from "../assets/hero_assets/loot/oct.png"
+import trout from "../assets/hero_assets/loot/trout.png"
+import rabbit from "../assets/hero_assets/loot/rab.png"
+import crab from "../assets/hero_assets/loot/crab.png"
 
 
 function RabbitPopup({ onClose }){

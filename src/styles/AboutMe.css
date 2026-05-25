@@ -1,6 +1,56 @@
 
 .aboutme-container {
-
+    position: relative;
     width: 100vw;
     height: 100vh;
+}
+
+.blurb-container{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 20%;
+
+}
+
+.grad{
+    cursor: grab;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    width: 425px;
+}
+
+.yose{
+    cursor: grab;
+
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    width: 340px;
+}
+
+.fun{
+    cursor: grab;
+
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    width: 270px;
+}
+
+.empty1{
+    cursor: grab;
+
+    position: absolute;
+    right: 10%;
+    width: 310px;
+}
+.empty2{
+    cursor: grab;
+
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    width: 225px;
 }

@@ -1,24 +1,24 @@
-import idle1 from "../assets/idle/idle1.png";
-import idle2 from "../assets/idle/idle2.png";
-import idle3 from "../assets/idle/idle3.png";
+import idle1 from "../assets/hero_assets/idle/idle1.png";
+import idle2 from "../assets/hero_assets/idle/idle2.png";
+import idle3 from "../assets/hero_assets/idle/idle3.png";
 
-import grab1 from "../assets/grab/grab1.png";
-import grab2 from "../assets/grab/grab2.png";
-import grab3 from "../assets/grab/grab3.png";
-import grab4 from "../assets/grab/grab4.png";
-import grab4Carrot from "../assets/grab/grab4-carrot.png";
-import grab4Lure from "../assets/grab/grab4-lure.png";
-import grab4Shrimp from "../assets/grab/grab4-shrimp.png";
-import grab4Worm from "../assets/grab/grab4-worm.png";
+import grab1 from "../assets/hero_assets/grab/grab1.png";
+import grab2 from "../assets/hero_assets/grab/grab2.png";
+import grab3 from "../assets/hero_assets/grab/grab3.png";
+import grab4 from "../assets/hero_assets/grab/grab4.png";
+import grab4Carrot from "../assets/hero_assets/grab/grab4-carrot.png";
+import grab4Lure from "../assets/hero_assets/grab/grab4-lure.png";
+import grab4Shrimp from "../assets/hero_assets/grab/grab4-shrimp.png";
+import grab4Worm from "../assets/hero_assets/grab/grab4-worm.png";
 
-import grab5 from "../assets/grab/grab5.png";
-import grab6 from "../assets/grab/grab6.png";
-import grab7 from "../assets/grab/grab7.png";
-import grab8 from "../assets/grab/grab8.png";
-import grab9 from "../assets/grab/grab9.png";
+import grab5 from "../assets/hero_assets/grab/grab5.png";
+import grab6 from "../assets/hero_assets/grab/grab6.png";
+import grab7 from "../assets/hero_assets/grab/grab7.png";
+import grab8 from "../assets/hero_assets/grab/grab8.png";
+import grab9 from "../assets/hero_assets/grab/grab9.png";
 
-import lake1 from "../assets/lake/lake1.png";
-import lake2 from "../assets/lake/lake2.png";
+import lake1 from "../assets/hero_assets/lake/lake1.png";
+import lake2 from "../assets/hero_assets/lake/lake2.png";
 
 
 export const lakeFrames = [

@@ -3,6 +3,9 @@ import "../styles/Background.css";
 
 import {useEffect, useState} from 'react';
 import AboutMe from "./AboutMe";
+import Experience from "./Experience";
+import Projects from "./Projects";
+import Contacts from "./Contacts"
 
 import plant1 from "../assets/plants/plant1.png"
 import plant2 from "../assets/plants/plant2.png"
@@ -25,6 +28,7 @@ function Background(){
     }, []);
     
     return(
+
         <div className="background">
             <div className="plants-layer">
                 <img className="plant1" 
@@ -55,41 +59,13 @@ function Background(){
             </div>
             <div className = "pages">
                 <AboutMe/>
-                <AboutMe/>
-                <AboutMe/>
-                <AboutMe/>
+                <Experience/>
+                <Projects/>
+                <Contacts/>
             </div>
         </div>
     )
 }
 
-
-{/* <div className="plants-layer">
-<img
-    className="plant1"
-    src={plant1}
-    alt=""
-    style={{
-        transform: `translateY(${scrollY * 0.05}px)`
-    }}
-/>
-
-<img
-    className="plant2"
-    src={plant2}
-    alt=""
-    style={{
-        transform: `translateY(${scrollY * 0.08}px)`
-    }}
-/>
-
-<img
-    className="plant3"
-    src={plant3}
-    alt=""
-    style={{
-        transform: `translateY(${scrollY * 0.03}px)`
-    }}
-/>
-</div> */}
+  
 export default Background;

@@ -5,6 +5,16 @@
     background-position: top center;  
     background-repeat: no-repeat;
     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pages {
+    margin-top: -100vh;     /* ← pull up to overlap plants-layer */
+    position: relative;
+    z-index: 20;
+    flex-shrink: 0;
 }
 
 
@@ -12,9 +22,10 @@
     position: sticky;
     top: 0;
     height: 100vh;
-
+    width: 100%;
+    z-index: 10;
     pointer-events: none;
-    z-index: 20;
+    flex-shrink: 0;  
 }
 
 .plant1,
@@ -23,7 +34,7 @@
 .plant4,
 .plant5 {
     position: absolute;
-    width: 200px;
+    width: 120px;
 }
 
 .plant1 {
