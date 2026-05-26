@@ -79,11 +79,6 @@ function AboutMe(){
                 </p>
 
             </div>
-            {/* <img className="grad" src={grad} alt="pic"/>
-            <img className="fun" src={fun} alt="pic"/>
-            <img className="yose" src={yose} alt="pic"/>
-            <img className="empty1" src={empty} alt="pic"/>
-            <img className="empty2" src={empty} alt="pic"/> */}
             <DraggableImg className="grad" src={grad} alt="pic" />
             <DraggableImg className="fun"  src={fun}  alt="pic" />
             <DraggableImg className="yose" src={yose} alt="pic" />

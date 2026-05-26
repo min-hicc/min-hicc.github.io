@@ -61,20 +61,6 @@ function CrabPopup({ onClose }){
       );
 }
 
-function sendEmail(e) {
-    e.preventDefault();
-
-    const name = e.target.name.value;
-    const message = e.target.message.value;
-
-    const subject = encodeURIComponent(`Message from ${name}`);
-
-    const body = encodeURIComponent(message);
-
-    window.location.href =
-        `mailto:youremail@gmail.com?subject=${subject}&body=${body}`;
-}
-
 function OctPopup({ onClose }){
     return (
         <div className="popup-background" onClick={onClose}>
@@ -82,28 +68,9 @@ function OctPopup({ onClose }){
             <div className="oct-text" onClick={(e) => e.stopPropagation()}>
                 <button className="x-button" onClick={onClose}>x</button>
                 <h1>Contact Me</h1>
-                <form
-                    onSubmit={sendEmail}
-                    className="contact-form"
-                >
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Your name"
-                        required
-                    />
+                <div className="contact-page">
 
-                    <textarea
-                        name="message"
-                        placeholder="Your message"
-                        rows="5"
-                        required
-                    />
-
-                    <button type="submit" className="submit-btn">
-                        Send!
-                    </button>
-                </form>
+                </div>
             </div>
         </div>
       );

@@ -104,37 +104,13 @@
     }
 }
 
-.contact-form{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
+.contact-page{
 
-.contact-form input,
-.contact-form textarea{
     border: 2px solid rgb(213, 160, 160);
     border-radius: 8px;
     padding: 10px;
-    font-size: 1rem;
-    outline: none;
-}
+    width: 50%;
 
-.contact-form input:focus,
-.contact-form textarea:focus{
-    border-color: rgb(185, 138, 138);
-}
 
-.submit-btn{
-    background: rgb(213, 160, 160);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.submit-btn:hover{
-    background: rgb(185, 138, 138);
 }
 

@@ -1,5 +1,221 @@
-
-.contact-container{
-    width: 100vw;
+.contact{
+    position: relative;
     height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.green-coral-1{
+    position: absolute;
+    left: 80%;
+    transform: scaleX(-1);
+    bottom: -15px;
+    width: 10%;
+    z-index: 2;
+
+}
+.green-coral-2{
+    position: absolute;
+    left: 10%;
+    bottom: -15px;
+    width: 10%;
+    z-index: 2;
+
+}
+
+.yellow-coral{
+    position: absolute;
+    left: 15%;
+    bottom: 0;
+    width: 10%;
+    z-index: 2;
+
+}
+.pink-coral{
+    position: absolute;
+    left: 70%;
+    bottom: 0;
+    width: 10%;
+    z-index: 2;
+
+}
+
+.contact-container {
+    position: absolute;
+    color: #2c2c3a;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+  
+  /* ── Header ── */
+.contact-header {
+    width: 320px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    align-self: start;
+}
+
+/* ── Body layout ── */
+.contact-body {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 32px;
+    align-items: center;
+}
+  
+  /* ── Form ── */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+  
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+  
+.form-field label {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7a9ab0;
+}
+  
+.form-field input,
+.form-field textarea {
+    background: rgba(240, 245, 248, 0.75);
+    border: 1px solid rgba(180, 205, 218, 0.6);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 0.82rem;
+    color: #2c2c3a;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s ease, background 0.2s ease;
+    resize: none;
+}
+  
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: #a0bfcc;
+}
+  
+.form-field input:focus,
+.form-field textarea:focus {
+    border-color: #7a9ab0;
+    background: rgba(240, 245, 248, 0.95);
+}
+  
+.send-btn {
+    align-self: flex-start;
+    padding: 10px 28px;
+    border-radius: 20px;
+    border: 1px solid #a0bfcc;
+    background: transparent;
+    color: #3a5a6a;
+    font-size: 0.82rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+  
+.send-btn:hover:not(:disabled) {
+    background: #5a7a8a;
+    color: #f0f5f8;
+    border-color: #5a7a8a;
+}
+  
+.send-btn.sending {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+  
+.form-feedback {
+    font-size: 0.78rem;
+    margin: 0;
+}
+
+.form-feedback-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: fit-content;
+    border-radius: 9px;
+
+    padding: 0px 7px 0px 7px;
+}
+  
+.form-feedback.success { color: #5a8a6a; }
+.form-feedback.error   { color: #a05a5a; }
+
+  /* ── Sidebar ── */
+.contact-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+  
+.socials-card,
+.email-card {
+    background: rgba(240, 245, 248, 0.75);
+    border: 1px solid rgba(180, 205, 218, 0.5);
+    border-radius: 14px;
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+  
+.socials-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #7a9ab0;
+    margin: 0;
+}
+  
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.82rem;
+    color: #3a5a6a;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+  
+.social-link:hover {
+    background: rgba(160, 191, 204, 0.2);
+    color: #2c2c3a;
+}
+  
+.social-icon {
+    width: 16px;
+    height: 16px;
+    color: #5a7a8a;
+    flex-shrink: 0;
+}
+
+.email-link {
+    font-size: 0.8rem;
+    color: #5a7a8a;
+    text-decoration: none;
+    word-break: break-all;
+    transition: color 0.15s;
+}
+  
+.email-link:hover {
+    color: #2c2c3a;
 }

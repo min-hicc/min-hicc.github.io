@@ -58,10 +58,22 @@ function Background(){
                 />
             </div>
             <div className = "pages">
-                <AboutMe/>
-                <Experience/>
-                <Projects/>
-                <Contacts/>
+
+                <div id="about">
+                    <AboutMe />
+                </div>
+
+                <div id="projects">
+                    <Projects />
+                </div>
+
+                <div id="experience">
+                    <Experience />
+                </div>
+
+                <div id="contact">
+                    <Contacts />
+                </div>
             </div>
         </div>
     )
