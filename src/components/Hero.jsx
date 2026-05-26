@@ -10,13 +10,19 @@ import Lure from "../assets/hero_assets/bait/lure.svg?react";
 import Shrimp from "../assets/hero_assets/bait/shrimp.svg?react";
 import Worm from "../assets/hero_assets/bait/worm.svg?react";
 
+import tape from "../assets/tpae.png";
+
+
 function Hero({ onBaitClick, lakeImage, meImage }){
     return(
         <div className="hero-container"> 
+        
             <div className="intro-text">
                 <h2>Hi I'm Sharon !</h2>
                 <p>Welcome to my website. I recently graduated from <strong>Rice University</strong> with a <strong>B.A. in Computer Science</strong> and spent two summers interning at <span className="red-text"><strong>Pinterest</strong></span>. I’m passionate about combining creativity and engineering to build elegant solutions with real world impact.</p>
             </div>
+            <img className="temp" src={tape} alt='under construction'/>
+
             <img className="lake" src={lakeImage} alt="lake"/>
             <img className="me" src={meImage} alt="me"/>
             <div className = "bait-container">

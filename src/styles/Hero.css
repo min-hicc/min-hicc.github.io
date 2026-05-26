@@ -7,6 +7,13 @@
     aspect-ratio: 16/9;
 }
 
+.temp{
+    position: absolute;
+    width: 300px;    
+    bottom: 0;
+    z-index: 1000;
+}
+
 .intro-text{
     display: flex;
     flex-direction: column;
