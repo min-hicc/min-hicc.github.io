@@ -2,6 +2,15 @@
     position: relative;
     padding: 60px 60px 60px 100px;
   }
+
+.scuba{
+  position: absolute;
+  right: 10%;
+  top: 0;
+  width: 20%;
+  animation: bob-footer 2.5s ease-in-out infinite;
+
+}
   
   /* ── Header ── */
   .exp-header {

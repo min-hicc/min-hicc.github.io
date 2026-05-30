@@ -1,5 +1,6 @@
 import '../styles/Experience.css';
 
+import scuba from "../assets/experience_assets/scuba.png";
 import { IoFishOutline } from "react-icons/io5";
 const experiences = [
   {
@@ -62,6 +63,7 @@ function Experience() {
           a professional journey and everything i've learned along the way
         </p>
       </div>
+      <img className="scuba" src={scuba} alt="diver"/>
 
       <div className="exp-timeline">
         {/* Vertical line */}

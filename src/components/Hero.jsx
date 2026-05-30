@@ -1,8 +1,6 @@
 import "../styles/Hero.css";
 
-import { FaArrowDown } from "react-icons/fa";
-
-import blue from "../assets/hero_assets/blobs/blue.png"
+import { LuCornerDownRight } from "react-icons/lu";import blue from "../assets/hero_assets/blobs/blue.png"
 import green from "../assets/hero_assets/blobs/green.png"
 import yellow from "../assets/hero_assets/blobs/yellow.png"
 import red from "../assets/hero_assets/blobs/red.png"
@@ -12,8 +10,8 @@ import Lure from "../assets/hero_assets/bait/lure.svg?react";
 import Shrimp from "../assets/hero_assets/bait/shrimp.svg?react";
 import Worm from "../assets/hero_assets/bait/worm.svg?react";
 
+import tackle from "../assets/hero_assets/tackle.png";
 import scroll from "../assets/hero_assets/scroll.png";
-
 
 import tape from "../assets/tpae.png";
 
@@ -27,7 +25,7 @@ function Hero({ onBaitClick, lakeImage, meImage }){
                 <p>Welcome to my website. I recently graduated from <strong>Rice University</strong> with a <strong>B.A. in Computer Science</strong> and spent two summers interning at <span className="red-text"><strong>Pinterest</strong></span>. I’m passionate about combining creativity and engineering to build elegant solutions with real world impact.</p>
             </div>
 
-            <img className="temp" src={tape} alt='under construction'/>
+            {/* <img className="temp" src={tape} alt='under construction'/> */}
 
             <img className="lake" src={lakeImage} alt="lake"/>
             <img className="me" src={meImage} alt="me"/>
@@ -35,54 +33,24 @@ function Hero({ onBaitClick, lakeImage, meImage }){
                 <p>click a bait for a quick look !</p>
 
                 <div className="arrow">
-                    <FaArrowDown/>
+                    <LuCornerDownRight/>
                 </div>
             </div>
             <div className = "bait-container">
                 <div className="bait-section">
-                    <Carrot className="bait" onClick={() => onBaitClick("carrot")}/>
-                    {/* <div className="blob-container">
-                        <img className="blob" src={green} alt="green" />
-
-                        <div className="blob-text">
-                            <h4>about me</h4>
-                            <p>who i am & what i love</p>
-                        </div>
-                    </div> */}
+                    <Carrot className="carrot bait" onClick={() => onBaitClick("carrot")}/>
                 </div>
                 <div className="bait-section">
-                    <Lure className="bait" onClick={() => onBaitClick("lure")}/>  
-                    {/* <div className="blob-container">
-                        <img className="blob" src={red} alt="red"/>
-
-                        <div className="blob-text">
-                            <h4> personal projects</h4>
-                            <p>things i've built for fun</p>
-                        </div>
-                    </div>                 */}
+                    <Lure className="lure bait" onClick={() => onBaitClick("lure")}/>  
                 </div>
                 <div className="bait-section">
-                    <Shrimp className="bait" onClick={() => onBaitClick("shrimp")}/>  
-                    {/* <div className="blob-container">
-                        <img className="blob" src={blue} alt="blue"/>
+                    <Shrimp className="shrimp bait" onClick={() => onBaitClick("shrimp")}/>  
 
-                        <div className="blob-text">
-                            <h4>internship experience</h4>
-                            <p>professional work </p>
-                        </div>
-                    </div>                 */}
                 </div>
                 <div className="bait-section">
-                    <Worm className="bait" onClick={() => onBaitClick("worm")}/> 
-                    {/* <div className="blob-container">
-                        <img className="blob" src={yellow} alt="yellow"/>
-
-                        <div className="blob-text">
-                            <h4>let's connect</h4>
-                            <p>say hi & reach out !</p>
-                        </div>
-                    </div>                 */}
+                    <Worm className="worm bait" onClick={() => onBaitClick("worm")}/> 
                 </div>  
+                <img className="tackle" src={tackle} alt="box"/>
             </div>
 
 

@@ -7,41 +7,52 @@ const projects = [
       id: 1,
       title: "HexGuess",
       tags: ["iOS"],
+      small: "A hex code guessing game",
       description:
         "A simple iOS game where players guess hex color codes based on displayed colors. Built to make learning hex codes feel more interactive and fun.",
       tech: ["Swift", "SwiftUI", "iOS"],
       categories: ["iOS"],
       preview: "hex",
+      link: "https://github.com/min-hicc/HexGuess",
+      img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXTU5S2puXbmEnAt5cs82IDWAW8dRCNf67Y1m6tBsOQGzK8KfRI80bBsO6tWO4ITGR60zoZqGmKKyRxBUMrM_3pdHIolu1_3ELOAhYQeEtaBe6EIh72OeVJtibp_rzVJDZI6gtl5-8iC8lIgH8uaUg1422pHQm8wjhP3lrKlGdKlxFtR78s4Zu8MLYRRzB/s1200/Color%20Wheel%20Basics%20Full%20RYB%20color%20wheel.jpg"
     },
     {
       id: 2,
       title: "Messaging Application",
       tags: ["web development", "school projects"],
+      small: "web-based messaging app",
       description:
-        "Built a web-based messaging app with a custom NoSQL document database that could be accessed over the network.",
-      tech: ["REST APIs", "JSON", "HTTP", "NoSQL"],
+        "Built a messaging app with a custom NoSQL document database that could be accessed over the network with concurrency.",
+      tech: ["JSON", "HTTP", "NoSQL"],
       categories: ["school projects", "web development"],
       preview: "messaging",
+      img: "https://1000logos.net/wp-content/uploads/2021/07/Rice-Owls-logo.png",
+
     },
     {
       id: 3,
       title: "Code Compiler",
       tags: ["systems", "school projecs"],
+      small: "an ILOC compiler",
       description:
         "Created a compiler for the ILOC language with features like register allocation and instruction scheduling to improve generated code performance.",
       tech: ["Compiler Design", "ILOC", "Systems"],
       categories: ["school projects"],
       preview: "compiler",
+      img: "https://1000logos.net/wp-content/uploads/2021/07/Rice-Owls-logo.png",
+
     },
     {
       id: 4,
       title: "Non-Prehensile Manipulation Planning",
       tags: ["robotics", "school projects"],
+      small: "motion planning system",
       description:
         "Built a motion planning system for a 7-DoF robot arm that could push and rearrange objects across a table using physics-based path planning.",
       tech: ["Python", "RRT", "Robotics", "Motion Planning"],
       categories: ["school projects"],
       preview: "robotics",
+      img: "https://1000logos.net/wp-content/uploads/2021/07/Rice-Owls-logo.png",
     },
   ];
 const filters = ["all projects", "iOS", "web development", "school projects"];
@@ -95,11 +106,14 @@ function Projects() {
                   onMouseLeave={() => setClickedProject(null)}
               >
 
+                    <div className="proj-card-img">
+                      <img src={proj.img}/>
+                    </div>
                   <div className="proj-card-body">
 
                       <div className="proj-card-title-row">
                           <h3 className="proj-card-title">
-                              {proj.title}
+                            <a href={proj.link}>{proj.title}</a>
                           </h3>
                       </div>
 
@@ -115,8 +129,9 @@ function Projects() {
                       </div>
 
                       <p className="proj-card-desc">
-                          {proj.description}
+                          {proj.small}
                       </p>
+
 
                   </div>
 

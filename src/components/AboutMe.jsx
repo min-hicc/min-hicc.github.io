@@ -3,6 +3,8 @@ import '../styles/AboutMe.css';
 import grad from '../assets/about_assets/me.png'
 import fun from '../assets/about_assets/fun.png'
 import yose from '../assets/about_assets/yosemite.png'
+import mala from '../assets/about_assets/mala.png'
+
 import empty from '../assets/about_assets/empty.png'
 
 import { GiDoubleFish } from "react-icons/gi";
@@ -78,8 +80,9 @@ function AboutMe(){
             <DraggableImg className="grad" src={grad} alt="pic" />
             <DraggableImg className="fun"  src={fun}  alt="pic" />
             <DraggableImg className="yose" src={yose} alt="pic" />
-            <DraggableImg className="empty1" src={empty} alt="pic" />
+            <DraggableImg className="mala" src={mala} alt="pic" />
             <DraggableImg className="empty2" src={empty} alt="pic" />
+
         </div>
     )
 }
