@@ -13,7 +13,6 @@ import Worm from "../assets/hero_assets/bait/worm.svg?react";
 import tackle from "../assets/hero_assets/tackle.png";
 import scroll from "../assets/hero_assets/scroll.png";
 
-import tape from "../assets/tpae.png";
 
 
 function Hero({ onBaitClick, lakeImage, meImage }){
@@ -25,7 +24,6 @@ function Hero({ onBaitClick, lakeImage, meImage }){
                 <p>Welcome to my website. I recently graduated from <strong>Rice University</strong> with a <strong>B.A. in Computer Science</strong> and spent two summers interning at <span className="red-text"><strong>Pinterest</strong></span>. I’m passionate about combining creativity and engineering to build elegant solutions with real world impact.</p>
             </div>
 
-            {/* <img className="temp" src={tape} alt='under construction'/> */}
 
             <img className="lake" src={lakeImage} alt="lake"/>
             <img className="me" src={meImage} alt="me"/>
