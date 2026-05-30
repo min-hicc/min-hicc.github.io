@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../styles/Contact.css';
+import { TbFishChristianity } from "react-icons/tb";
 
 import green from "../assets/contact_assets/green.png"
 import pink from "../assets/contact_assets/pink.png"
@@ -52,10 +53,10 @@ function Contact() {
             <div className="contact-container">
                 <div className="contact-header">
                     <p className="contact-eyebrow">get in touch</p>
-                    <p className="contact-title">~~</p>
+                    <TbFishChristianity/>
                     <p className="contact-subtitle">
-                        Have a question, idea, or just want to chat?<br />
-                        Send me a message and I'll get back to you.
+                        have a question, idea, or just want to chat?<br />
+                        send me a message and i'll get back to you
                     </p>
                 </div>
 

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../styles/Projects.css';
+import { TbFishBoneFilled } from "react-icons/tb";
 
 const projects = [
     {
@@ -47,7 +48,8 @@ const filters = ["all projects", "iOS", "web development", "school projects"];
 
 function Projects() {
   const [activeFilter, setActiveFilter] = useState("all projects");
-
+  const [clickedProject, setClickedProject] = useState(null);
+  
   const filtered = projects.filter(p =>
     activeFilter === "all projects" || p.categories.includes(activeFilter)
   );
@@ -57,11 +59,11 @@ function Projects() {
       <div className="proj-container">
         <div className="proj-header">
             <p className="proj-title">personal projects</p>
-            <p className="proj-squiggle">〜〜</p>
+            <TbFishBoneFilled/>
             <p className="proj-subtitle">
-              Things I build for fun, to solve<br />
+              things i build for fun, to solve<br />
               problems, and to keep learning.<br />
-              Each project is a new adventure!
+              stay tuned for more!
             </p>
         </div>
 
@@ -81,30 +83,67 @@ function Projects() {
           </div>
 
           <div className="proj-grid">
-            {filtered.map((proj, i) => (
-              <div className="proj-card" key={proj.id} style={{"--i": i}}>
-                <div className="proj-card-body">
-                  <div className="proj-card-title-row">
-                    <h3 className="proj-card-title">{proj.title}</h3>
-                    <span className="proj-card-emoji">{proj.emoji}</span>
+
+          {filtered.map((proj, i) => (
+
+              <div
+                  className="proj-card"
+                  key={proj.id}
+                  style={{ "--i": i }}
+
+                  onMouseEnter={() => setClickedProject(proj)}
+                  onMouseLeave={() => setClickedProject(null)}
+              >
+
+                  <div className="proj-card-body">
+
+                      <div className="proj-card-title-row">
+                          <h3 className="proj-card-title">
+                              {proj.title}
+                          </h3>
+                      </div>
+
+                      <div className="proj-card-tags">
+                          {proj.tags.map(t => (
+                              <span
+                                  className="proj-tag"
+                                  key={t}
+                              >
+                                  {t}
+                              </span>
+                          ))}
+                      </div>
+
+                      <p className="proj-card-desc">
+                          {proj.description}
+                      </p>
+
                   </div>
-                  <div className="proj-card-tags">
-                    {proj.tags.map(t => (
-                      <span className="proj-tag" key={t}>{t}</span>
-                    ))}
-                  </div>
-                  <p className="proj-card-desc">{proj.description}</p>
-                  <div className="proj-card-footer">
-                    <div className="proj-tech">
-                      {proj.tech.map(t => <span key={t} className="tech-item">{t}</span>)}
-                    </div>
-                  </div>
-                </div>
+
               </div>
-            ))}
+
+          ))}
+
+          {/* FLOATING PREVIEW */}
+
+          {clickedProject && (
+              <div className="project-preview">
+                  <div className="preview-inner">
+                      <h2>{clickedProject.title}</h2>
+                      <p>{clickedProject.description}</p>
+                      <div className="preview-tech">
+                          {clickedProject.tech.map(t => (
+                              <span key={t} className="preview-tech-item">
+                                  {t}
+                              </span>
+                          ))}
+                      </div>
+                  </div>
+              </div>
+          )}
+
           </div>
         </div>
-
       </div>
     </div>
   );

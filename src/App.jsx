@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import { idleFrames, grabFramesCarrot, grabFramesShrimp, grabFramesWorm, grabFramesLure, lakeFrames } from "./animations/me_animations";
 import "./styles/Hero.css";
 
+import { FaFish } from "react-icons/fa6";
+
 import Hero from "./components/Hero";
 import Popup from "./components/Popup";
 import Background from "./components/Background";
@@ -17,6 +19,7 @@ function Header(){
                 <a href="#projects">projects</a>
                 <a href="#experience">experience</a>
                 <a href="#contact">contact</a>
+                <FaFish/>
             </div>
         </div>
     )

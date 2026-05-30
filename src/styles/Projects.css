@@ -13,14 +13,17 @@
 
 /* ── Header ── */
 .proj-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   width: 320px;
-  margin-left: 100px;
-  margin-bottom: 40px;
+  margin: 100px 0 40px 100px;
   align-self: start;
 }
 
 .proj{
-  margin: 100px;
+  margin: 0 100px 100px 100px;
+  
 }
 
 /* ── Controls ── */
@@ -437,3 +440,112 @@
   color: #7a9ab0;
   margin-top: 4px;
 }
+
+/* PREVIEW BUBBLE */
+
+.project-preview{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  width: 360px;
+  height: 360px;
+
+  pointer-events: none;
+  border-radius: 50%;
+
+  background:
+    rgba(255,255,255,0.78);
+
+  backdrop-filter: blur(18px);
+
+  box-shadow:
+      0 20px 60px rgba(0,0,0,0.12);
+
+  z-index: 999;
+
+  animation:
+    bubble-rise   1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards,
+    bubble-sway   1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) forwards,
+    bubble-wobble 1.5s ease-in-out forwards;
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px;
+}
+
+/* INNER CONTENT */
+
+.preview-inner{
+  width: 100%;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.preview-inner h2{
+  margin: 0;
+
+  font-size: 28px;
+}
+
+.preview-inner p{
+  margin: 0;
+
+  line-height: 1.5;
+
+  font-size: 15px;
+}
+
+/* TECH TAGS */
+
+.preview-tech{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.preview-tech-item{
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  background: rgba(0,0,0,0.08);
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* FLOAT IN */
+@keyframes bubble-rise {
+  0%   { opacity: 0; top: 110%; scale: 0.65; }
+  12%  { opacity: 0.7; }
+  100% { opacity: 1; top: 50%; scale: 1; }
+}
+
+@keyframes bubble-sway {
+  0%   { left: 50%; }
+  18%  { left: 53%; }
+  36%  { left: 47%; }
+  54%  { left: 52%; }
+  72%  { left: 48.5%; }
+  88%  { left: 50.5%; }
+  100% { left: 50%; }
+}
+
+@keyframes bubble-wobble {
+  0%   { border-radius: 50%; }
+  20%  { border-radius: 52% 48% 50% 50% / 48% 50% 52% 50%; }
+  40%  { border-radius: 48% 52% 50% 50% / 50% 48% 50% 52%; }
+  60%  { border-radius: 51% 49% 52% 48% / 49% 51% 48% 52%; }
+  80%  { border-radius: 49% 51% 48% 52% / 52% 48% 51% 49%; }
+  100% { border-radius: 50%; }
+}
+

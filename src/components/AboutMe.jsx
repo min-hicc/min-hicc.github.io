@@ -5,6 +5,7 @@ import fun from '../assets/about_assets/fun.png'
 import yose from '../assets/about_assets/yosemite.png'
 import empty from '../assets/about_assets/empty.png'
 
+import { GiDoubleFish } from "react-icons/gi";
 
 function useDraggable() {
     const [pos, setPos] = useState({ x: 0, y: 0 });
@@ -67,15 +68,10 @@ function AboutMe(){
     return(
         <div className="aboutme-container">
             <div className="blurb-container">
-                <p>about me</p>
-                <p> i'm a computer science graduate from Rice University who loves building things 
+                <p>ABOUT ME</p>
+                <GiDoubleFish/>
+                <p> i'm a computer science graduate from rice university who loves building things 
                     that are thoughtful, beautiful, and useful.
-                </p>
-                <p> i'm a computer science graduate from Rice University who loves building things 
-                    that are thoughtful, beautiful, and useful.
-                </p>
-                <p>
-                    -sm
                 </p>
 
             </div>

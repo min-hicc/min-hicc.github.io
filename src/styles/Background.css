@@ -60,3 +60,87 @@
     top: 70px;
     right: 0;
 }
+
+
+.fish-layer{
+    position: absolute;
+    inset: 0;
+
+    overflow: hidden;
+    pointer-events: none;
+}
+
+/* OUTER = horizontal swim */
+
+.fish-wrapper{
+    position: absolute;
+}
+
+/* LEFT FACING */
+
+.fish-wrapper.left .fish{
+    transform: scaleX(-1);
+}
+
+/* INNER = bobbing */
+
+.fish-bob{
+    animation: bob ease-in-out infinite;
+
+    will-change: transform;
+
+    transform: translate3d(0,0,0);
+}
+
+/* IMAGE */
+
+.fish{
+    width: 120px;
+    opacity: 0.9;
+}
+
+/* SWIM */
+
+@keyframes swim-right{
+    from{
+        transform: translateX(-250px);
+    }
+
+    to{
+        transform: translateX(calc(100vw + 250px));
+    }
+}
+
+@keyframes swim-left{
+    from{
+        transform: translateX(calc(100vw + 250px));
+    }
+
+    to{
+        transform: translateX(-250px);
+    }
+}
+
+/* BOB */
+
+@keyframes bob{
+    0%{
+        transform: translateY(0px);
+    }
+
+    25%{
+        transform: translateY(-8px);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    75%{
+        transform: translateY(-8px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}

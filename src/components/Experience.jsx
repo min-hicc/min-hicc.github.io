@@ -1,19 +1,6 @@
-
-// import '../styles/Experience.css';
-
-
-// function Experience(){
-//     return(
-//         <div className="exp-container">
-//             <p>experience</p>
-//         </div>
-//     )
-// }
-
-// export default Experience;
-
 import '../styles/Experience.css';
 
+import { IoFishOutline } from "react-icons/io5";
 const experiences = [
   {
     id: 1,
@@ -70,9 +57,9 @@ function Experience() {
     <div className="exp-container">
       <div className="exp-header">
         <p className="exp-title">experience</p>
-        <div className="exp-squiggle">〜〜</div>
+        <IoFishOutline/>
         <p className="exp-subtitle">
-          A few places I've worked, things I've built, and lessons I've learned along the way.
+          a professional journey and everything i've learned along the way
         </p>
       </div>
 

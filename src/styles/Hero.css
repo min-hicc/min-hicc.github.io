@@ -51,7 +51,8 @@
     flex-direction: column;
     gap: 10px;
     width: 25%;
-    left: 70%;
+    left: 80%;
+    top: 5%;
     z-index: 81;
 }
 
@@ -105,4 +106,69 @@
 .bait polygon,
 .bait ellipse {
     pointer-events: visiblePainted;
+}
+
+
+.hero-footer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+    bottom: -10px;
+    align-items: center;
+
+    animation: bob-footer 2.5s ease-in-out infinite;
+}
+
+.scroll{
+    height: 100px;
+    width: 100%;
+}
+
+@keyframes bob-footer {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bait-hint{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: fit-content;
+    
+    
+    left: 65%;
+    top: 10%;
+
+    font-size: 14px;
+
+}
+
+.arrow{
+    animation:
+        arrow-bob 1s ease-in-out infinite;
+}
+
+@keyframes arrow-bob{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(4px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
 }

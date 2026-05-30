@@ -23,6 +23,8 @@
     translate: -65px 0;
 }
 
+
+
 .crab-popup{
     display: flex;
     flex-direction: column;
@@ -86,14 +88,58 @@
 }
 .oct-text{
     background: white;
-    padding: 2rem;
+    padding: 2rem 3rem 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 12px;
     animation: popupIn 0.25s ease-out forwards;
     z-index: 100;
-    translate: 0 100px;
+    translate: 10px 65px;
     width: fit-content;
     
 }
+
+.contact-page{
+    border: 2px solid rgb(213, 160, 160);
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+}
+
+.socials-label-oct {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color:  rgb(190, 120, 120);
+    margin: 0;
+}
+
+.social-link-oct{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.82rem;
+    color: rgb(190, 120, 120);
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: background 0.15s ease, color 0.15s ease;
+
+}
+
+.social-icon-oct{
+    width: 16px;
+    height: 16px;
+    color: rgb(190, 120, 120);
+    flex-shrink: 0;
+}
+.social-link-oct:hover {
+    background: rgba(239, 211, 195, 0.2);
+    color: #784781;
+}
+
+
 
 @keyframes popupIn {
     from {
@@ -103,14 +149,3 @@
       transform: translateY(0);
     }
 }
-
-.contact-page{
-
-    border: 2px solid rgb(213, 160, 160);
-    border-radius: 8px;
-    padding: 10px;
-    width: 50%;
-
-
-}
-

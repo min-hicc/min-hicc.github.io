@@ -3,7 +3,6 @@ import idle2 from "../assets/hero_assets/idle/idle2.png";
 import idle3 from "../assets/hero_assets/idle/idle3.png";
 
 import grab1 from "../assets/hero_assets/grab/grab1.png";
-import grab2 from "../assets/hero_assets/grab/grab2.png";
 import grab3 from "../assets/hero_assets/grab/grab3.png";
 import grab4 from "../assets/hero_assets/grab/grab4.png";
 import grab4Carrot from "../assets/hero_assets/grab/grab4-carrot.png";
@@ -41,7 +40,6 @@ export const idleFrames = [
 
 export const grabFramesCarrot = [
     grab1,
-    grab2,
     grab3,
     grab4,
     grab4Carrot,
@@ -55,7 +53,6 @@ export const grabFramesCarrot = [
 ];
 export const grabFramesLure = [
     grab1,
-    grab2,
     grab3,
     grab4,
     grab4Lure,
@@ -69,7 +66,6 @@ export const grabFramesLure = [
 ];
 export const grabFramesShrimp = [
     grab1,
-    grab2,
     grab3,
     grab4,
     grab4Shrimp,
@@ -83,7 +79,6 @@ export const grabFramesShrimp = [
 ];
 export const grabFramesWorm = [
     grab1,
-    grab2,
     grab3,
     grab4,
     grab4Worm,
