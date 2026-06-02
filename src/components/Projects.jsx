@@ -1,10 +1,24 @@
 import { useState } from 'react';
 import '../styles/Projects.css';
 import { TbFishBoneFilled } from "react-icons/tb";
+import poser from "../assets/project_assets/poser.png"
 
 const projects = [
     {
       id: 1,
+      title: "Poser",
+      tags: ["iOS"],
+      small: "iOS app to simplify poses for drawing references ",
+      description:
+        "Analyze any image containing a body into 3 different levels of gestures (lines, shapes, outline). Tool for artists to capture the anatomy of human drawing references.",
+      tech: ["Swift", "SwiftUI", "iOS"],
+      categories: ["iOS"],
+      preview: "poser",
+      link: "https://github.com/min-hicc/Poser",
+      img: poser,
+    },
+    {
+      id: 2,
       title: "HexGuess",
       tags: ["iOS"],
       small: "A hex code guessing game",
@@ -17,7 +31,7 @@ const projects = [
       img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXTU5S2puXbmEnAt5cs82IDWAW8dRCNf67Y1m6tBsOQGzK8KfRI80bBsO6tWO4ITGR60zoZqGmKKyRxBUMrM_3pdHIolu1_3ELOAhYQeEtaBe6EIh72OeVJtibp_rzVJDZI6gtl5-8iC8lIgH8uaUg1422pHQm8wjhP3lrKlGdKlxFtR78s4Zu8MLYRRzB/s1200/Color%20Wheel%20Basics%20Full%20RYB%20color%20wheel.jpg"
     },
     {
-      id: 2,
+      id: 3,
       title: "Messaging Application",
       tags: ["web development", "school projects"],
       small: "web-based messaging app",
@@ -30,7 +44,7 @@ const projects = [
 
     },
     {
-      id: 3,
+      id: 4,
       title: "Code Compiler",
       tags: ["systems", "school projecs"],
       small: "an ILOC compiler",
@@ -43,7 +57,7 @@ const projects = [
 
     },
     {
-      id: 4,
+      id: 5,
       title: "Non-Prehensile Manipulation Planning",
       tags: ["robotics", "school projects"],
       small: "motion planning system",

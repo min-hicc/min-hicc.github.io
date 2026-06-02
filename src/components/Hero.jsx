@@ -1,9 +1,6 @@
 import "../styles/Hero.css";
 
-import { LuCornerDownRight } from "react-icons/lu";import blue from "../assets/hero_assets/blobs/blue.png"
-import green from "../assets/hero_assets/blobs/green.png"
-import yellow from "../assets/hero_assets/blobs/yellow.png"
-import red from "../assets/hero_assets/blobs/red.png"
+import { LuCornerDownRight } from "react-icons/lu";
 
 import Carrot from "../assets/hero_assets/bait/carrot.svg?react";
 import Lure from "../assets/hero_assets/bait/lure.svg?react";
