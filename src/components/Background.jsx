@@ -1,7 +1,7 @@
 
 import "../styles/Background.css";
 
-import {useEffect, useState, useMemo} from 'react';
+import {useEffect, useState} from 'react';
 import AboutMe from "./AboutMe";
 import Experience from "./Experience";
 import Projects from "./Projects";

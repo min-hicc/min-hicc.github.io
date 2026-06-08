@@ -1,9 +1,9 @@
 import {useEffect, useState, useRef, useCallback} from 'react';
 import '../styles/AboutMe.css';
-import grad from '../assets/about_assets/me.png'
+import grad from '../assets/about_assets/me.avif'
 import fun from '../assets/about_assets/fun.png'
-import yose from '../assets/about_assets/yosemite.png'
-import mala from '../assets/about_assets/mala.png'
+import yose from '../assets/about_assets/yosemite.avif'
+import mala from '../assets/about_assets/mala.avif'
 
 import empty from '../assets/about_assets/empty.png'
 

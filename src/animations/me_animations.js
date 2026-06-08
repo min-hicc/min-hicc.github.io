@@ -16,8 +16,8 @@ import grab7 from "../assets/hero_assets/grab/grab7.png";
 import grab8 from "../assets/hero_assets/grab/grab8.png";
 import grab9 from "../assets/hero_assets/grab/grab9.png";
 
-import lake1 from "../assets/hero_assets/lake/lake1.png";
-import lake2 from "../assets/hero_assets/lake/lake2.png";
+import lake1 from "../assets/hero_assets/lake/lake1.avif";
+import lake2 from "../assets/hero_assets/lake/lake2.avif";
 
 
 export const lakeFrames = [
